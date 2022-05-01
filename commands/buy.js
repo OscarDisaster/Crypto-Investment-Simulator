@@ -32,7 +32,7 @@ function buySolana(user) {
             user.lastMoney = money;
             user.money = 0;
             user.lastSolPrice = solPrice;
-            message = 'I have bought ' + user.solanas + ' solanas with ' + user.lastMoney + ' euros. solanaPrice was ' + user.lastSolPrice;
+            message = 'I have boughtt ' + user.solanas + ' solanas with ' + user.lastMoney + ' euros. solanaPrice was ' + user.lastSolPrice;
             user.hasInvested = true;
             yield backendless_1.default.Data.of('CryptoBot').save(user);
         }

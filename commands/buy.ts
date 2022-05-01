@@ -29,7 +29,7 @@ async function buySolana (user:CryptoBot):Promise<string>{
       user.money = 0
       user.lastSolPrice = solPrice   
 
-      message = 'I have bought ' + user.solanas + ' solanas with ' + user.lastMoney+  ' euros. solanaPrice was ' + user.lastSolPrice
+      message = 'I have boughtt ' + user.solanas + ' solanas with ' + user.lastMoney+  ' euros. solanaPrice was ' + user.lastSolPrice
       user.hasInvested = true
       await Backendless.Data.of('CryptoBot').save(user)
 
